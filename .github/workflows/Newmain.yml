@@ -14,6 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: rsync deployments
+      env:
+       SHELL: bash
       uses: burnett01/rsync-deployments@5.2.1
       with:
         switches: -avzr --delete
