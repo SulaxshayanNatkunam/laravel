@@ -26,4 +26,4 @@ jobs:
       run: git clone https://github.com/SulaxshayanNatkunam/sample-app.git
 
     - name: Deploy with rsync
-      run: rsync -avz sample-app/dist/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
+      run: rsync -avz sample-app/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}
