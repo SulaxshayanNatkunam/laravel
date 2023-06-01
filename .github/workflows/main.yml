@@ -39,7 +39,9 @@ jobs:
       run: |
         sudo systemctl start nginx
     - name: Copy env file
-      run: cp .env .env.example
+      run: |
+        echo "$(pwd)"
+        cp .env.example .env
     #- name: Generate application key
      # run: php artisan key:generate
 
