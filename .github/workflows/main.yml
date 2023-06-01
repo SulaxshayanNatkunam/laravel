@@ -42,8 +42,8 @@ jobs:
       run: |
         echo "$(pwd)"
         cp .env.example .env
-    #- name: Generate application key
-     # run: php artisan key:generate
+    - name: Generate application key
+      run: php artisan key:generate
 
     #- name: Migrate database
      # run: php artisan migrate --force
