@@ -32,4 +32,11 @@ jobs:
         sudo apt install php &&
         sudo apt install composer &&
         sudo apt install python3-certbot-apache
-
+     
+    - name: Install Nginx
+      run: |
+        sudo apt install nginx -y
+    - name: Start Nginx
+      run: |
+        sudo systemctl start nginx
+     
