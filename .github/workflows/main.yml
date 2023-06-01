@@ -51,13 +51,12 @@ jobs:
      
     - name: Install php extentions
       run: |
-        sudo apt-get install php8.0-xml
-        sudo apt-get install php8.0-dom
-        sudo apt-get install php8.0-curl
-        sudo apt-get install php8.0-mbstring
-        sudo apt-get install php-dom
-        sudo apt-get install php-xml
-        sudo apt-get install php-mbstring
+        sudo apt-get install php5.6-xml
+        sudo apt-get install php5.6-dom
+        sudo apt-get install php5.6-curl
+        sudo apt-get install php5.6-mbstring
+
+
         
     - name: Install Composer 
       run: composer install
