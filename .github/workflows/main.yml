@@ -38,11 +38,8 @@ jobs:
     - name: Start Nginx
       run: |
         sudo systemctl start nginx
-    - name: Study where I am
-      run: |
-        cd laravel/
-        echo $(pwd)
-      
+    - name: Copy env file
+      run: cp .env .env.example
     #- name: Generate application key
      # run: php artisan key:generate
 
