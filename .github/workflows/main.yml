@@ -39,4 +39,15 @@ jobs:
     - name: Start Nginx
       run: |
         sudo systemctl start nginx
-     
+        
+    - name: Install Composer dependencies
+      run: composer install --no-dev --optimize-autoloader
+      
+    - name: Generate application key
+      run: php artisan key:generate
+
+    - name: Migrate database
+      run: php artisan migrate --force
+      
+    - name: Serve Laravel Application
+      run: php artisan serve
