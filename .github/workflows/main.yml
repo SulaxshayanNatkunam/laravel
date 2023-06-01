@@ -17,7 +17,7 @@ jobs:
       with:
         switches: -avzr --delete
         path: .
-        remote_path: /home/sulaxshayan/laravel
+        remote_path: /home/sulaxshayan/sample
         remote_host: 54.66.70.26
         remote_port: 22
         remote_user: sulaxshayan
