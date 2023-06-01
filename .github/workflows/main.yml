@@ -55,7 +55,9 @@ jobs:
         sudo apt-get install php8.0-dom
         sudo apt-get install php8.0-curl
         sudo apt-get install php8.0-mbstring
-                                                
+    
+    - name: Install Composer 
+      run: composer install
     #- name: Generate application key
      # run: php artisan key:generate
     
